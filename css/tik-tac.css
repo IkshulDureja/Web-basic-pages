@@ -1,0 +1,100 @@
+        #info{
+            color: red;
+            text-align: center;
+        }
+        #info-div{
+            text-align: center;
+            margin-left: 610px;
+            display: none;
+        }
+        #parent{
+            display: none;
+        }
+        #outline{
+            margin: auto;
+            margin-top: 20px;
+        }
+        .btn{
+            width: 50px;
+            height: 20px;
+        }
+        body{
+            background-image: url(../pics/black-texture.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .screen{
+            color: ghostwhite;
+            text-align: center; 
+            cursor: pointer;
+            
+        }
+        
+        td{
+         width: 85px;
+         height: 65px;
+        }
+        #result{
+            width: 200px;
+            height: 25px;
+            margin-left: 660px;
+            margin-top: 10px;
+            border: 1px;
+            border-radius: 10px;
+            outline-color: brown;
+            outline-width: thick;
+            text-align: center;
+            color: orangered;
+            
+        }
+        #res{
+            margin-left: 720px;
+            color: gold;
+            margin-top: 10px;
+            font-family: monospace;
+            font-size: 23px;
+        } 
+        #tit{
+            color: lightgray;
+            font-size: 60px;
+            text-align: center;
+            padding: 60px;
+            padding-bottom: 50px;
+            text-align: center;
+            
+        
+        }
+        #start{
+            color: aliceblue;
+            background-color: grey;
+            font-size: 30px;
+            height: 40px;
+            width: 100px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: 740px;
+            cursor: pointer;
+        }
+        #start:hover{
+            background-color: green;
+            color: black;
+        }
+        #end{
+            color: aliceblue;
+            background-color: grey;
+            font-size: 30px;
+            height: 40px;
+            width: 100px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 4px;
+            margin-left: 700px;
+            cursor: pointer;
+            display: none;
+               
+        }
+        #end:hover{
+            background-color: red;
+            color: black;
+        }

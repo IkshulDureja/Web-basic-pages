@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<style type="text/css">
+        #outer-div > a   
+		{
+			width: 150px;;		 
+			padding: 10px; color: yellow;
+			border-radius:10px;
+			background-color: red;
+			float: left; text-align: center;
+			margin-left: 10px;;
+			margin-top: 10px;;
+		}
+		
+		
+		/*#inner-div a
+		#inner-div>a*/
+		#outer-div>#inner-div>a
+		{
+			width: 150px;	 
+			padding: 10px; color: white;
+			border-radius:10px;
+			background-color: green;
+			float: left; text-align: center;
+			margin-left: 10px;;
+			margin-top: 10px;;
+		}
+		#outer-div
+		{
+			width: 800px; height: 500px;
+			background-color: gold;
+		}
+		#inner-div
+		{
+			width: 600px; height: 200px;
+			background-color: silver;
+			margin-top: 90px; float: left;
+		}
+    
+        #new-div
+		{
+			width: 400px; height: 80px;
+			background-color: blue;
+			margin-top: 90px;
+            margin-bottom: 20px;
+            margin-left: 90px;
+		}
+        £new-div > a   
+		{
+			width: 150px;;		 
+			padding: 10px; color: yellow;
+			border-radius:10px;
+			background-color: red;
+			float: left; text-align: center;
+			margin-left: 10px;;
+			margin-top: 10px;;
+		}
+    </style>
+	
+</head>
+<body>
+	
+	<!-- 
+  		/* #container a    -> Parent Selector(filter)*/
+		/* #container>a    -> Descendent Selector(filter)*/
+		/* .class1>.class2    -> Descendent Selector(filter)*/
+		/* #class1>#class2    -> Descendent Selector(filter)*/
+		 -->
+	  
+	  
+	  <div id="outer-div">
+	  		<a href="#" >Forgot Password -1</a>
+	  		<div id="inner-div">
+	  			<a href="#" class >Forgot Password-2</a>
+	  			<a href="#" >Forgot Password-3</a>
+                <div id="new-div">	  			
+                    <a href="#" class >Forgot Password-4</a>
+                	  			<a href="#" >Forgot Password-5</a>
+                </div>
+	  	    </div>		
+	  	    
+
+	  	  </div>
+	  
+	  <br>
+	  <br>
+	  	<a href="#" >Forgot</a>
+	  	
+</body>
+</html>

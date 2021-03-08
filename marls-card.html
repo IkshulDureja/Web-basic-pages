@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marks Card</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+        }
+
+        #main-div {
+            width: 600px;
+            height: 500px;
+            background-color: ;
+            margin: auto;
+
+        }
+
+        #div-1 {
+            width: inherit;
+            height: 100px;
+            background-color: ;
+        }
+
+        #div-2 {
+            width: inherit;
+            padding-bottom: 10px;
+            margin-left: ;
+            background-color: ;
+            float: left;
+            border: 2px green solid;
+        }
+
+        #div-3 {
+            width: 400px;
+            height: 40px;
+            background-color: orangered;
+            text-align: center;
+            border-radius: 15px;
+
+            margin-left: 100px;
+            margin-top: 75px;
+            float: left;
+            margin-bottom: 25px;
+            padding-top: 20px;
+        }
+
+        #text {
+            font-size: 22px;
+        }
+
+        #css-div {
+            width: inherit;
+            margin-left: 190px;
+            background-color: ;
+            float: left;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function DoCalci(task) {
+            var mc = parseFloat(document.form.cppM.value);
+            var mj = parseFloat(document.form.javaM.value);
+            var mw = parseFloat(document.form.webM.value);
+            var T = mc + mj + mw;
+            var P = T / 3;
+            if (task == 1)
+                document.form.total.value = T;
+            else
+            if (task == 2)
+                document.form.per.value = P;
+            else
+            if (task == 3) {
+                if (P > 90) {
+                    var x = "A";
+                    document.form.grade.value = x;
+                } else
+                if (P > 80 && P < 90) {
+                    var x = "B";
+                    document.form.grade.value = x;
+                } else
+                if (P > 70 && P < 80) {
+                    var x = "C";
+                    document.form.grade.value = x;
+                } else
+                if (P > 60 && P < 70) {
+                    var x = "D";
+                    document.form.grade.value = x;
+                } else {
+                    var x = "Fail";
+                    document.form.grade.value = x;
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="main-div">
+
+        <div id="div-1">
+            <div id="div-3">MARKS CARD</div>
+        </div>
+        <div id="div-2">
+            <div id="css-div">
+                <form name="form">
+
+
+                    <table border="0" id="text" rules="cols" width="">
+
+                        <tr>
+                            <td>
+                                C++
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" name="cppM">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Java
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" name="javaM">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Web-D
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" name="webM">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="Total" onclick="DoCalci(1);">
+                                <input type="button" value="Percentage" onclick="DoCalci(2);">
+                                <input type="button" value="Grade" onclick="DoCalci(3);">
+                                <input type="reset" value="reset">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Total
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" name="total" readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Percentage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" name="per" readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Grade
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="grade" readonly>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: white;
+}
+#main-div{
+    width: 1000px;
+        margin: auto;
+    background-color: gray;
+
+}
+#heading-div{
+    width: inherit;
+    padding: 10px;
+    font-size: 40px;
+    padding-top: 10px;
+    text-align: center;
+    float: left;
+    background-color:;
+}
+
+#content-div{
+    width: inherit;
+    padding: 10px;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+    float: left;
+}
+#cards{
+    width: 1150px;
+    height: 350px;
+    background-color: blue;
+    margin-left: 275px;
+    float: left;
+    margin-top: 35px;
+}
+#end{
+    width: 1550px;
+    height: 430px;
+    background-color: black;
+    float: left;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+#detail{
+    width: 350px;
+    height: 350px;
+    background-color: red;
+    display: inline-block;
+    margin-right: 30px;
+    
+}
+#row{
+    width: 10px;
+    height: 170px;
+    background-color: gray;
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+}
+#row1{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 70px;
+    font-size: 17px;
+}
+#c1{
+    width: 580px;
+    height: 330px;
+    background-color: green;
+    float: left;
+    margin-left: 100px;
+}
+
+#c2{
+    width: 400px;
+    height: 330px;
+    background-color: green;
+    float:  left;
+    margin-left: 60px;
+}
+
+#c3{
+    width: 350px;
+    height: 330px;
+    background-color: green;
+    float: left;
+    margin-left: 60px;
+}
+#text{
+    font-size: 20px;
+    color: white;
+}
+#line{
+    width: 400px;
+    height: 2px;
+    background-color: gray;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+#end-line{
+    width: 1450;
+    height: 2px;
+    background-color: gray;
+    float: left;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+#x{
+    width: 1550;
+    height: 330px;
+    float: left;
+    background-color: yellow;
+}
+#new-div{
+    width: 1590px;
+    height: 535px;
+    background-color: pink;
+    float: left;
+}

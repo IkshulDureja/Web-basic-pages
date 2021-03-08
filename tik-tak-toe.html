@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tik Tak Toe</title>
+    <link rel="stylesheet" href="css/tik-tac.css">
+   
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script>
+    
+    
+    $(document).ready(function(){
+        $("#info-div").fadeIn(800);
+        $("#start").click(function(){
+            $("#parent").fadeIn(800);
+            $("#end").fadeIn(800);
+            $("#start").fadeOut(800);
+            $("#info-div").fadeOut(800);
+//            if(p1c=="O")
+//             alert(p1c);
+//            `else
+//                if(p2c=="Os")
+//                alert(p2c);`
+//            $("#name-1").val("");
+//            $("#name-2").val("");
+//            $("#O1").prop("checked","false");
+//            $("#O2").prop("checked","false");
+//            $("#X1").prop("checked","false");
+//            $("#X2").prop("checked","false");
+        });
+        $("#end").click(function(){
+            $("#parent").fadeOut(800);
+            $("#end").fadeOut(800);
+            $("#start").fadeIn(800);
+            $("#info-div").fadeIn(800);
+//            p1c="";
+//            p2c="";
+//            na="";
+//            nb="";
+           x
+        });
+        J=0;
+        K=0;
+        
+        $("#O1").click(function(){
+                $("#X2").prop("checked",true);
+        });
+        $("#X1").click(function(){
+            $("#O2").prop("checked",true);
+        });
+        $("#O2").click(function(){
+                $("#X1").prop("checked",true);
+        });
+        $("#X2").click(function(){
+            $("#O1").prop("checked",true);
+        });
+        
+//        if($("#O1").click(function(){
+//            
+//            $("#X1").prop("checked","false");
+//        
+//            $("#X2").prop("checked","true");
+//            
+//        });
+//       if($("#O2").click(function(){
+//            
+//            $("#X2").prop("checked","false");
+//        
+//            $("#X1").prop("checked","true");
+//            
+//        });
+        
+        
+        
+        $("#start").click(function(){
+            
+            na=$("#name-1").val();
+            nb=$("#name-2").val();
+            if(($("#O1").prop("checked")))   
+              //  alert("ok");
+               { 
+                   p1c="O";
+                   $("#X1").prop("checked","false");
+                  // alert(p1c);
+               }
+            else
+                {
+                    p1c="X";
+                    $("#O1").prop("checked","false");
+                  //  alert(p1c);
+                }
+            
+            if(($("#O2").prop("checked")))
+              {
+                 p2c="O";
+                  $("#X2").prop("checked","false");
+                  //alert(p2c);
+              }  
+            else
+                {
+                    p2c="X";
+                    $("#O2").prop("checked","false");
+                  //  alert(p2c);
+                }
+            $("#name-1").val("");
+            $("#name-2").val("");
+            $("#O1").prop("checked",false);
+            $("#O2").prop("checked",false);
+            $("#X1").prop("checked",false);
+            $("#X2").prop("checked",false);
+            
+        });
+//        x="";
+//        $(".btn").click(function(){
+//            x=this.value;
+           // alert(x);
+        x=0;
+      // var S=[];
+            $(".screen").click(function(){
+                x++;
+                //alert(x);
+                if(x%2==0)
+                  {
+                          $(this).html("X");
+                        $(this).unbind();
+                  }
+                
+                else
+                   {
+                        $(this).html("O");
+                        $(this).unbind();
+                   }
+               // alert(this.value);
+                
+//                for(i=0;i<x;i++)
+//                    {
+//                        S[i]=$(this).html();
+                       // alert(S[i]);
+                    //}
+                A=$("#a").html();
+                //alert(A);
+                B=$("#b").html();
+                C=$("#c").html();
+                D=$("#d").html();
+                E=$("#e").html();
+                F=$("#f").html();
+                G=$("#g").html();
+                H=$("#h").html();
+                I=$("#i").html();
+               
+                if((A==B)&&(B==C)&&(C=='O')||(D==E)&&(E==F)&&(F=='O')||(G==H)&&(H==I)&&(I=='O')||(A==D)&&(D==G)&&(G=='O')||(B==E)&&(E==H)&&(H=='O')||(C==F)&&(F==I)&&(I=='O')||(G==E)&&(E==C)&&(C=='O')||(A==E)&&(E==I)&&(I=='O'))
+                    {
+//                        alert("O  Wins!!");
+//                        $("#result").val("O");
+//                        $(".screen").unbind();
+//                        J=1;
+                        if(p1c=="O")
+                            {
+                                alert(na+" Wins!!");
+                                $("#result").val(na);
+                                $(".screen").unbind();
+                                J=1;
+                            }
+                        else
+                            {
+                                alert(nb+" Wins!!");
+                                $("#result").val(nb);
+                                $(".screen").unbind();
+                                J=1;
+                            }
+                    }
+                else
+                    if((A==B)&&(B==C)&&(C=='X')||(D==E)&&(E==F)&&(F=='X')||(G==H)&&(H==I)&&(I=='X')||(A==D)&&(D==G)&&(G=='X')||(B==E)&&(E==H)&&(H=='X')||(C==F)&&(F==I)&&(I=='X')||(G==E)&&(E==C)&&(C=='X')||(A==E)&&(E==I)&&(I=='X'))
+                    {
+//                        alert("X Wins!!");
+//                        $("#result").val("X");
+//                        $(".screen").unbind();
+//                        J=1;
+                        if(p1c=="X")
+                            {
+                                alert(na+" Wins!!");
+                                $("#result").val(na);
+                                $(".screen").unbind();
+                                J=1;
+                            }
+                        else
+                            {
+                                alert(nb+" Wins!!");
+                                $("#result").val(nb);
+                                $(".screen").unbind();
+                                J=1;
+                            }
+                        
+                    }
+                K++;
+                //alert(K);
+               // alert(J);
+                if((K==9) && (J==0))
+                  {
+                      alert("It's Draw!!");
+                      $("#result").val("Draw");
+                      $(".screen").unbind();
+                  } 
+            });
+        //alert(K);
+        // alert(J);
+        
+            
+        
+    });
+    </script>
+</head>
+<body>
+  
+   <div id="tit">TIC TAC TOE</div>
+<div id="info-div">
+    <table id="info">
+        <tr>
+            <td>
+                Player-1 
+            </td>
+            <td>
+                <input type="text" placeholder="Enter Name" id="name-1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Choose Character: 
+            </td>
+            <td>
+                <input type="radio" name="char" id="O1" value="O"> O
+                <input type="radio" name="char" id="X1" value="X"> X
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Player-2 
+            </td>
+            <td>
+                <input type="text" placeholder="Enter Name" id="name-2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Choose Character: 
+            </td>
+            <td>
+                <input type="radio" name="char2" id="O2" value="O"> O
+                <input type="radio" name="char2" id="X2" value="X"> X
+            </td>
+        </tr>
+<!--
+        <tr>
+            <td colspan="2">
+                <input type="button" value="Enter" id="enter">
+            </td>
+        </tr>
+-->
+        
+    </table>
+    
+</div>
+   <div id="start">START</div>
+   
+<div id="parent">
+    <table  border="1" rules="all" id="outline" >
+        <tr>
+            <td width="50" id="a" class="screen"></td>
+            <td id="b" class="screen"></td>
+            <td id="c" class="screen"></td>
+        </tr>
+                <tr>
+            <td id="d" class="screen"></td>
+            <td id="e" class="screen"></td>
+            <td id="f" class="screen"></td>
+        </tr>
+                <tr>
+            <td id="g" class="screen"></td>
+            <td id="h" class="screen"></td>
+            <td id="i" class="screen"></td>
+        </tr>
+        
+    </table>
+<!--
+    <input type="button" value="O" class="btn" id="O">
+    <input type="button" value="X" class="btn" id="X">
+-->
+
+<div id="res">Winner</div>
+<input type="text" id="result" value="" readonly>
+<div id="end">END</div>
+</div>
+</body>
+</html>

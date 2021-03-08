@@ -1,0 +1,27 @@
+#heading{
+    
+    width: 100%;
+    height: 90px;
+    background-color: palevioletred;
+}
+#heading-2{
+    
+    background-color: gold;
+    float: right;
+margin-bottom:50px;
+}
+#heading-3{
+    
+    width: 18%;
+    height: 1000px;
+    float: right;
+    background-color: green;
+}
+#formmsc{
+    
+    width: 82%;
+    height: 1000px;
+    background-color: skyblue;
+    padding-top: 30px;
+    padding-left: 30px;
+}

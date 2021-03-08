@@ -1,0 +1,111 @@
+/*Universal Selector*/
+*{
+	margin:0px;
+}
+body{
+	background-image: url(../pics/bgreen.gif);
+}
+#over-all
+{
+	width: 900px;
+	height: 900px;
+	background-color: white;;
+	margin: auto;
+}
+#title-div
+{
+	width: inherit;
+	height: 50px;
+	background-color: dimgray;
+}
+.title{
+	color:white;
+	font-size: 25px;
+	/*margin-top: 10px;
+	margin-left: 50px;*/
+	margin: 10px 0px 0px 50px;
+	float: left;
+	transition: ease all 1s;
+}
+
+.title:hover
+{
+	transform: scale(1.2);
+	transition: ease all 1s;
+	text-shadow: -5px -5px 5px red;/*left-right   top-bottom  sharpness color*/
+}
+#menu-div
+{
+	width: inherit;
+	height: 50px;
+	background-color: white;
+}
+#title-pic
+{
+	width: inherit;
+	height: 200px;
+	background-color: green;
+	background-image: url(../pics/banner1.jpg);
+}
+#products-div
+{
+	width: inherit;
+	
+	color: white;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+}
+#all-products-div
+{
+	width: inherit;
+	height: 300px;
+	background-color: white;
+	text-align: center;
+}
+.product
+{
+	width: 230px;
+	height: 270px;
+	background-color: #e8eaed;
+	border:2px gray solid;
+	margin-top: 10px;
+	display: inline-block;
+	margin-left: 10px;
+	padding: 10px;
+	
+	rotate(10deg);
+		transition: ease all 1s;
+	
+	border-radius: 10%;
+}
+.product:hover{
+	box-shadow: 5px 5px 5px gray;
+	transform: rotate(10deg);
+		transition: ease all 1s;
+
+}
+img
+{
+	width: 100px;;
+	height: 100px;
+	transition: ease all 1s;
+}
+img:hover
+{
+	transform: rotate(360deg);
+	transition: ease all 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

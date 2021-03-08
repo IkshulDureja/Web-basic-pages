@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marks Card</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+        }
+
+        #main-div {
+            width: 600px;
+            height: 500px;
+            background-color: ;
+            margin: auto;
+
+        }
+
+        #div-1 {
+            width: inherit;
+            height: 100px;
+            background-color: ;
+        }
+
+        #div-2 {
+            width: inherit;
+            padding-bottom: 10px;
+            margin-left: ;
+            background-color: ;
+            float: left;
+            border: 2px green solid;
+        }
+
+        #div-3 {
+            width: 400px;
+            height: 40px;
+            background-color: orangered;
+            text-align: center;
+            border-radius: 15px;
+
+            margin-left: 100px;
+            margin-top: 75px;
+            float: left;
+            margin-bottom: 25px;
+            padding-top: 20px;
+        }
+
+        #text {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        #css-div {
+            width: inherit;
+            margin-left: 120px;
+            background-color: ;
+            float: left;
+        }
+
+        .btn {
+            width: 80px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: gray;
+
+        }
+
+    </style>
+    <script type="text/javascript">
+        D = 0;
+        E = 0;
+
+        function DoCalci(task) {
+
+            if (task == 1) {
+                if (jasusC == true && jasusJ == true && jasusW == true) {
+                    T = parseFloat(mc) + parseFloat(mj) + parseFloat(mw);
+                    document.getElementById("total").value = T;
+                    D = 1;
+                }
+            } else
+            if (task == 2 && D == 1) {
+                P = T / 3;
+                document.getElementById("per").value = P;
+                E = 1;
+            } else
+
+
+            if (task == 3 && D == 1 && E == 1) {
+                if (P > 90) {
+                    var x = "A";
+                    document.getElementById("grade").value = x;
+                } else
+                if (P > 80 && P < 90) {
+                    var x = "B";
+                    document.getElementById("grade").value = x;
+                } else
+                if (P > 70 && P < 80) {
+                    var x = "C";
+                    document.getElementById("grade").value = x;
+                } else
+                if (P > 60 && P < 70) {
+                    var x = "D";
+                    document.getElementById("grade").value = x;
+                } else {
+                    var x = "Fail";
+                    document.getElementById("grade").value = x;
+                }
+            }
+
+        }
+
+        var JasusC = true;
+        var JasusJ = true;
+        var JasusW = true;
+
+        function DoCheckCpp() {
+
+            mc = document.getElementById("cppM").value;
+            if (mc == "") {
+                document.getElementById("errC").innerHTML = "Fill It";
+                //document.getElementById("txtA").style.backgroundColor="red";
+                jasusC = false;
+            } else
+            if (parseFloat(mc) > 100) {
+                jasusC = false;
+                document.getElementById("errC").innerHTML = "must be <=100";
+            } else if (isNaN(mc)) {
+                document.getElementById("errC").innerHTML = "must be numeric";
+                jasusC = false;
+            } else {
+                document.getElementById("errC").innerHTML = "";
+                jasusC = true;
+                //document.getElementById("txtA").style.backgroundColor="green";
+            }
+        }
+
+        function DoCheckJava() {
+
+            mj = document.getElementById("javaM").value;
+            if (mj == "") {
+                document.getElementById("errJ").innerHTML = "Fill It";
+                //document.getElementById("txtA").style.backgroundColor="red";
+                jasusJ = false;
+            } else
+            if (parseFloat(mj) > 100) {
+                jasusJ = false;
+                document.getElementById("errJ").innerHTML = "must be <=100";
+            } else if (isNaN(mj)) {
+                document.getElementById("errJ").innerHTML = "must be numeric";
+                jasusJ = false;
+            } else {
+                document.getElementById("errJ").innerHTML = "";
+                jasusJ = true;
+                //document.getElementById("txtA").style.backgroundColor="green";
+            }
+
+        }
+
+        function DoCheckWeb() {
+
+
+            mw = document.getElementById("webM").value;
+            if (mw == "") {
+                document.getElementById("errW").innerHTML = "Fill It";
+                //document.getElementById("txtA").style.backgroundColor="red";
+                jasusW = false;
+            } else
+            if (parseFloat(mw) > 100) {
+                jasusW = false;
+                document.getElementById("errW").innerHTML = "must be <=100";
+            } else if (isNaN(mw)) {
+                document.getElementById("errW").innerHTML = "must be numeric";
+                jasusW = false;
+            } else {
+                document.getElementById("errW").innerHTML = "";
+                jasusW = true;
+                //document.getElementById("txtA").style.backgroundColor="green";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="main-div">
+
+        <div id="div-1">
+            <div id="div-3">MARKS CARD</div>
+        </div>
+        <div id="div-2">
+            <div id="css-div">
+                <form name="form">
+
+
+                    <table border="0" id="text" width="">
+
+                        <tr>
+                            <td width="10" colspan="2">
+                                C++
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" id="cppM" style="width:320px" onblur="DoCheckCpp();">
+                            </td>
+                            <td style="margin-top:30px;">
+                                <span id="errC">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Java
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" >
+                                <input type="text" id="javaM" style="width:320px" onblur="DoCheckJava();">
+                            </td>
+                            <td>
+                                <span id="errJ">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Web-D
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" id="webM" style="width:320px" onblur="DoCheckWeb();">
+                            </td>
+                            <td>
+                                <span id="errW">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value="Total" class="btn" onclick="DoCalci(1);">
+                                <input type="button" value="Percentage" class="btn" onclick="DoCalci(2);">
+                                <input type="button" value="Grade" class="btn" onclick="DoCalci(3);">
+                                <input type="reset" value="reset" class="btn">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Total
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" id="total" style="width:320px" readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Percentage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" id="per" style="width:320px"  readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                Grade
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" id="grade" style="width:320px" readonly>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

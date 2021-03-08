@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+}
+#overall-div{
+    width: 900px;
+    height: 700px;
+    margin: auto;
+    background-color: white;
+}
+#heading{
+    width: inherit;
+    height: 30px;
+    text-align: center;
+    background-color: orange;
+    padding-top: 10px;
+}
+#heading2{
+    width: inherit;
+    height: 30px;
+    text-align: center;
+    background-color: gray;
+    padding-top: 10px;
+}
+#image-div{
+    width: inherit;
+    height: 250px;
+    background-image: url(../pics/w2.jpg)
+}
+#cards{
+    width: inherit;
+    height: 330px;
+    text-align: center;
+    transition: ease all 1s;
+    background-color: coral;
+    padding-top: 10px;
+}
+.type{
+    width: 230px;
+	height: 270px;
+	background-color: skyblue;
+	border:2px gray solid;
+	margin-top: 10px;
+	display: inline-block;
+	margin-left: 10px;
+	padding: 10px;
+	
+	rotate(10deg);
+		transition: ease all 1s;
+	
+	border-radius: 10%;
+}
+img{
+    width: 220px;
+    height: 200px;
+}
+.type:hover{
+   box-shadow: 5px 5px 3px gray ;
+	transform: rotate(10deg);
+		transition: ease all 1s;
+}
+body{
+    background-image:url(../pics/bg4.jpg)
+}
+#copyright{
+    background-color: azure;
+    text-decoration-color: gold;
+    height: 40px;
+}

@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <title>SPACE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript">
+        chk1 = true;
+        chk2 = true;
+        chk3 = true;
+
+        function doCheckValue(NUM) {
+
+            if (NUM == 1) {
+                inData = document.getElementById("cppM").value;
+                if (inData == "") {
+                    document.getElementById("errCpp").innerHTML = "FILL THE DETAILS";
+                    chk1 = false;
+
+                } else
+                if (parseFloat(inData) > 100) {
+                    chk1 = false;
+                    document.getElementById("errCpp").innerHTML = "NUMBER MUST BE LESS THAN 100";
+                } else
+                if (isNaN(inData)) {
+                    document.getElementById("errCpp").innerHTML = "MUST BE NUMERIC";
+                    chk1 = false;
+                }
+            }
+            if (NUM == 2) {
+                inData = document.getElementById("javaM").value;
+                if (inData == "") {
+                    document.getElementById("errJava").innerHTML = "FILL THE DETAILS";
+                    chk2 = false;
+
+                } else
+                if (parseFloat(inData) > 100) {
+                    chk2 = false;
+                    document.getElementById("errJava").innerHTML = "NUMBER MUST BE LESS THAN 100";
+                } else
+                if (isNaN(inData)) {
+                    document.getElementById("errJava").innerHTML = "MUST BE NUMERIC";
+                    chk2 = false;
+                }
+            }
+            if (NUM == 3) {
+                inData = document.getElementById("webM").value;
+                if (inData == "") {
+                    document.getElementById("errWeb").innerHTML = "FILL THE DETAILS";
+                    chk3 = false;
+
+                } else
+                if (parseFloat(inData) > 100) {
+                    chk3 = false;
+                    document.getElementById("errWeb").innerHTML = "NUMBER MUST BE LESS THAN 100";
+                } else
+                if (isNaN(inData)) {
+                    document.getElementById("errWeb").innerHTML = "MUST BE NUMERIC";
+                    chk3 = false;
+                }
+            }
+        }
+
+        function doCal(NUM2) {
+                
+
+            if (chk1 == true && chk2 == true && chk3 == true) {
+                document.getElementById("errWeb").innerHTML = "";
+                document.getElementById("errJava").innerHTML = "";
+                document.getElementById("errCpp").innerHTML = "";
+                 var c=parseFloat(document.getElementById("cppM").value);
+                 var j=parseFloat(document.getElementById("javaM").value);
+                 var w=parseFloat(document.getElementById("webM").value);
+                 alert("hghg");
+                if (NUM2 == '1') {
+                    alert("hghg");
+                    var sum=c+j+w;
+                } else
+                    document.getElementById("total").value = "h"; //set
+                if (NUM2 == '2') {
+                    alert("sfdgdgsds");
+                    var percentage = sum / 3;
+                    document.getElementById("per").value = parseFloat(percentage); //set
+                } else
+                    document.getElementById("per").value = "";
+                if (NUM2 == '3') {
+                    if (percentage > 90)
+                        document.getElementById("grade").value = "PASS";
+                    else
+                        document.getElementById("grade").value = "FAIL";
+                }
+
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="head-div"><span class="text">MARKS CARD</span>
+        <div class="logo"></div>
+        <div class="logo" style="float: left"></div>
+    </div>
+    <div id="bg-div">
+        <ol class="o">
+            <li class="i"><a href="">PHYSICS</a></li>
+            <li class="i"><a href="">CHEMISTRY</a></li>
+            <li class="i"><a href="">BIOTECH.</a></li>
+            <li class="i"><a href="">MATERIAL SCI.</a></li>
+            <li class="i"><a href="">AERODYNAMICS</a></li>
+            <li class="i"><a href="">PROPULSION</a></li>
+            <li class="i"><a href="">ENGINES</a></li>
+            <li class="i"><a href="">MOON</a></li>
+            <li class="i"><a href="">MARS</a></li>
+            <li class="i"><a href="">EXO PLANETS</a></li>
+
+            <li class="i" style="width:178.0px; height:681px; border-bottom-style: solid">
+                <image src="pics/rocket.jpg" width="100%" height="100%"></image>
+            </li>
+        </ol>
+        <div class="HEADING"><span class="text" style="font-weight: 100">
+                <table BORDER="0" RULES="COLS" width="100%" height="60%">
+                    <tr width="100%" height="100%">
+                        <th width="25%"><a href="http://127.0.0.1:62371/styling.html">HOME</a></th>
+                        <th width="25%"><a href="">PHOTOS</a></th>
+                        <th width="25%"><a href="">ABOUT US</a></th>
+                        <th width="25%"><a href="">LOGIN</a></th>
+                    </tr>
+                </table>
+            </span>
+        </div>
+        <form name="form">
+            <table width="500" style="text-align: center;" border="0">
+                <tr height="40">
+                    <td class="text" style="font-size:30px; color: RED;">C++</td>
+                </tr>
+                <tr height="40">
+                    <td class="text" style="font-size:30px;"><input type="text" style="outline: none;border-width: 0px; width: 400px; text-align: center;" id="cppM" autofocus onblur="doCheckValue(1);"></td>
+                </tr>
+                <tr height="10">
+                    <td style="align-content: center;"><span id="errCpp" style="color: wheat;"></span></td>
+                </tr>
+                <tr height="40">
+                    <td class="text" style="font-size:30px; color: RED;">JAVA</td>
+                </tr>
+                <tr height="40">
+                    <td class="text" style="font-size:30px;"><input type="text" style="outline: none;border-width: 0px;width: 400px; text-align: center;" id="javaM" onblur="doCheckValue(2);"></td>
+                </tr>
+                <tr height="10">
+                    <td style="align-content: center;"><span id="errJava" style="color: wheat;"></span></td>
+                </tr>
+
+                <tr height="40">
+                    <td class="text" style="font-size:30px; color: RED;">WEB DEVELOPMENT</td>
+                </tr>
+                <tr height="40">
+                    <td class="text" style="font-size:30px;"><input type="text" style="outline: none;border-width: 0px;width: 400px; text-align: center;" id="webM" onblur="doCheckValue(3);"></td>
+                </tr>
+                <tr height="10">
+                    <td style="align-content: center;"><span id="errWeb" style="color: wheat;"></span></td>
+                </tr>
+
+                <tr height="40">
+                    <td style="display: flex; justify-content: space-evenly;">
+                        <div style="padding-left: 10px; padding-right: 10px; align-content: center;"> <input type="button" value="TOTAL" onclick="doCal(1);" style="outline: none;background-color: orange; width: 150px; height: 40px; border-radius:20px;"></div>
+                        <div style="padding-left: 10px; padding-right: 10px; align-content: center;"><input type="button" value="PERCENTAGE" onclick="doCal(2);" style="outline: none;background-color: orange; width: 150px; height: 40px; border-radius:20px;"></div>
+                        <div style="padding-left: 10px; padding-right: 10px; align-content: center;"><input type="button" value="GRADE" onclick="doCal(3);" style="outline: none;background-color: orange; width: 150px; height: 40px; border-radius:20px;"></div>
+                        <div style="padding-left: 10px; padding-right: 10px; align-content: center;"><input type="reset" value="CLEAR" style="outline: none;background-color: orange; width: 150px; height: 40px; border-radius:20px;"></div>
+                    </td>
+                </tr>
+                <tr height="40">
+                    <td class="text" style="font-size:30px; color: RED;">TOTAL</td>
+                </tr>
+                <tr height="40">
+                    <td class="text" style="font-size:30px;"><input type="text" style="outline: none;border-width: 0px;width: 400px; text-align: center;" id="total" disabled></td>
+                </tr>
+                <tr height="40">
+                    <td class="text" style="font-size:30px; color: RED;">PER</td>
+                </tr>
+                <tr height="40">
+                    <td class="text" style="font-size:30px;"><input type="text" style="outline: none;border-width: 0px;width: 400px; text-align: center;" id="per" disabled></td>
+                </tr>
+                <tr height="40">
+                    <td class="text" style="font-size:30px; color: RED;">GRADE</td>
+                </tr>
+                <tr height="40">
+                    <td class="text" style="font-size:30px;"><input type="text" style="outline: none;border-width: 0px;width: 400px; text-align: center;" id="grade" disabled></td>
+                </tr>
+
+            </table>
+        </form>
+
+    </div>
+
+</body></html>

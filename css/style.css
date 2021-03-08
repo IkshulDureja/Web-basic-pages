@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+}
+
+#head-div {
+    border: 2px white solid;
+    background-color: black;
+    width: 1533px;
+    height: 100px;
+}
+
+#bg-div {
+    background-image: url(../pics/spacebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1533px;
+    height: 1000px;
+    border: 2px WHITE solid;
+    border-top: 0PX;
+}
+
+.text {
+    color: white;
+    text-shadow: 3px 3px 3px lightblue;
+    font-size: 75px;
+    font-weight: 400;
+    margin-left: 450PX;
+    transition: ease all 1s;
+
+}
+
+.text:hover {
+    transition: ease all 1s;
+    transform-style: preserve-3d;
+}
+
+.logo {
+    background-image: url(../pics/nasa.png);
+
+    width: 100px;
+    height: 98px;
+    float: right;
+}
+
+.logo:hover {
+    transform: rotate(360deg) scale(1.2);
+    transition: ease all 1s;
+}
+
+.o {
+    list-style: upper-roman;
+    background-color: #463939;
+    width: 150px;
+    height: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*padding-left: 0px;*/
+    float: left;
+
+}
+
+.i {
+    margin-left: -40px;
+    /*text-align: center;*/
+    line-height: 30px;
+    color: white;
+    border-bottom: 2px white dotted;
+    border-right: 2px white solid;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+#int-video {
+    width: 900px;
+    height: 300px;
+    margin-left: 190px;
+    border: 2px red dashed;
+}
+
+.HEADING {
+    margin-left: 190px;
+    width: 1342px;
+    height: 20px;
+    background-color: burlywood;
+    padding-bottom: 4PX;
+    padding-top: 4PX;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20.0px;
+}
+
+.gh {
+    width: 90px;
+    height: 25px;
+    background-color: orange;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    color: black;
+    font-size: 10px;
+    padding-top: 7px;
+    font-family: Simplex;
+}

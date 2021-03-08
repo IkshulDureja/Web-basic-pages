@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            tot = 0;
+            net = 0;
+            $(".key").click(function() {
+
+                if ($("#all").prop("checked")) {
+                    tot = 0;
+                    $("#books").prop("checked", "true");
+                    $("#mobile").prop("checked", "true");
+                    $("#laptop").prop("checked", "true");
+                    //alert(tot);
+                }
+                //                else
+                //                    if ($("#all").prop("checked")==false)
+                //                    {
+                //                        $("#books").prop("checked","false");
+                //                        $("#mobile").prop("checked","false");
+                //                        $("#laptop").prop("checked","false");
+                //                        //alert(tot);
+                //                    }
+            });
+            //=-=-=-=---=-=-=-=-=-
+
+
+            //             $(".key").click(function(){
+            //                    if ($(this).prop("checked"))
+            //                      //  alert(this.value);
+            //                        tot=tot+parseInt(this.value);
+            //               //     alert(tot);
+            //                });
+            //            
+            //            
+            //             $(".discount").click(function(){
+            //                    if ($(this).prop("checked"))
+            //                   //     alert(tot);
+            //                        net=tot-(parseInt(this.value)/100*tot);
+            //                  // alert(net);
+            //                });
+
+            $("#bill").click(function() {
+                // alert(books.value);
+                if ($("#books").prop("checked"))
+                    tot = tot + parseInt(books.value);
+                if ($("#mobile").prop("checked"))
+                    tot = tot + parseInt(mobile.value);
+                if ($("#laptop").prop("checked"))
+                    tot = tot + parseInt(laptop.value);
+                if ($("#dis-1").prop("checked"))
+                    net = tot - (parseInt(10) / 100 * tot);
+                else
+                    net = tot - (parseInt(20) / 100 * tot);
+                // alert(net);
+                $("#billout").val(net);
+                tot=0;
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <input type="checkbox" class="key" id="all" value="67500">All
+    <br>
+    <input type="checkbox" class="key" id="books" value="500">Books-500
+    <br>
+    <input type="checkbox" class="key" id="mobile" value="17000">Mobile-17000
+    <br>
+    <input type="checkbox" class="key" id="laptop" value="50000">Laptop-50000
+    <br>
+    <input type="radio" name="A" class="discount" value="10" id="dis-1">10%
+    <input type="radio" name="A" class="discount" value="20" id="dis-2">20%
+    <br>
+    <br><br>
+    <input type="button" id="bill" value="Bill">
+    <br>
+    <input type="text" id="billout" value="">Total
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+    background-image: url(../pics/bg6.jpg)
+}
+
+#main-div {
+    width: 1000px;
+    margin: auto;
+    background-color: gray;
+
+}
+
+#heading-div {
+    width: inherit;
+    padding: 10px;
+    font-size: 40px;
+    padding-top: 10px;
+    text-align: center;
+    float: left;
+    background-color: ;
+}
+
+#content-div {
+    width: inherit;
+    padding: 10px;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+    float: left;
+}
+
+#cards {
+    width: 1150px;
+    height: 350px;
+    background-color: ;
+    margin-left: 275px;
+    float: left;
+    margin-top: 35px;
+}
+
+#end {
+    width: 1550px;
+    height: 360px;
+    background-color: black;
+    float: left;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+#detail {
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    display: inline-block;
+    margin-right: 30px;
+
+}
+
+#row {
+    width: 10px;
+    height: 170px;
+    background-color: gray;
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+}
+
+#row1 {
+    width: 200px;
+    height: 170px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 70px;
+    font-size: 17px;
+    color: black;
+}
+
+#c1 {
+    width: 580px;
+    height: 330px;
+    background-color: ;
+    float: left;
+    margin-left: 100px;
+}
+
+#c2 {
+    width: 400px;
+    height: 330px;
+    background-color: ;
+    float: left;
+    margin-left: 60px;
+}
+
+#c3 {
+    width: 350px;
+    height: 330px;
+    background-color: ;
+    float: left;
+    margin-left: 60px;
+}
+
+#text {
+    font-size: 20px;
+    color: darkgray;
+}
+
+#line {
+    width: 400px;
+    height: 2px;
+    background-color: gray;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+#end-line {
+    width: 1450;
+    height: 2px;
+    background-color: gray;
+    float: left;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+#x {
+    width: 1550;
+    height: 330px;
+    float: left;
+    background-color: ;
+}
+
+#new-div {
+    width: 1590px;
+    height: 535px;
+    float: left;
+    
+}
+
+#pic-div {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    float: left;
+    margin-left: 50px;
+}
+
+#name-div {
+    width: 150px;
+    height: 60px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 17px;
+    font-size: 13px;
+}
+
+#name-font {
+    color: red;
+}
+#y{
+    height: 1050px
+}

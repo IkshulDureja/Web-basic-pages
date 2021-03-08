@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script>
+            
+            function ShowInput(nos)
+            {
+                document.getElementById("screen").value+=nos;
+            }
+            
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="3">
+                <input type="text" id="screen" readonly>
+            </td>
+            <td>
+                CLEAR
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="ShowInput('1');"></td>
+            <td><input type="button" value="2" onclick="ShowInput('2');"></td>
+            <td><input type="button" value="3" onclick="ShowInput('3');"></td>
+            <td><input type="button" value="+" onclick="ShowInput('+');"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="ShowInput('4');"></td>
+            <td><input type="button" value="5" onclick="ShowInput('5');"></td>
+            <td><input type="button" value="6" onclick="ShowInput('6');"></td>
+            <td><input type="button" value="-" onclick="ShowInput('-');"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="ShowInput('7');"></td>
+            <td><input type="button" value="8" onclick="ShowInput('8');"></td>
+            <td><input type="button" value="9" onclick="ShowInput('9');"></td>
+            <td><input type="button" value="*" onclick="ShowInput('*');"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="ShowInput('0');"></td>
+            <td><input type="button" value="." onclick="ShowInput('.');"></td>
+            <td><input type="button" value="00" onclick="ShowInput('00');"></td>
+            <td><input type="button" value="/" onclick="ShowInput('/');"></td>
+        </tr>
+        <tr>
+            <td colspan="3" >
+                <input type="button" id="ans" value="=" onclick="ShowAns();">
+            </td>
+            <td>
+                <input type="button" value="%" onclick="ShowInput('%');">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

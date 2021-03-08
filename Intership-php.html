@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <form action="internship.php" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Roll No</td>
+                <td><input type="number" name="rollno"></td>
+            </tr>
+            <tr>
+                <td>Branch</td>
+                <td>
+                    <select name="branch">
+                        <option value="Coe">COE</option>
+                        <option value="Mechanical">MECHANICAL</option>
+                        <option value="Electronics">ELECTRONICS</option>
+                        <option value="Civil">CIVIL</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Skills
+                </td>
+                <td>
+                    <select name="skills[]" size="3" multiple>
+                        <option value="CPP" name="cpp">C++</option>
+                        <option value="JAVA" name="java">Java</option>
+                        <option value="WEBD" name="webd">WEBD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="file" name="profile">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
